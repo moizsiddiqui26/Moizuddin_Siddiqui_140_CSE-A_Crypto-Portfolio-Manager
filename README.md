@@ -185,3 +185,4 @@ Developed as part of the **Infosys Springboard Virtual Internship Program (2025�
 ## 📄 License
 
 This project is developed for educational and learning purposes.
+Copyright © 2026 Moizuddin Siddiqui
