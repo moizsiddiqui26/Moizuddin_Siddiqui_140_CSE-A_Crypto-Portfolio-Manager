@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  crypto-saas-ui:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: crypto_ai_frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - crypto-saas-api
+    restart: unless-stopped
+
+  crypto-saas-api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: crypto_ai_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
