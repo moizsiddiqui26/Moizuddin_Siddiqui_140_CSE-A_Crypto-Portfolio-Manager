@@ -57,11 +57,15 @@ The platform integrates real-time cryptocurrency market data, forecasting analyt
 ## 📂 Project Structure
 
 ```text
-CRYPTOPORT/
+Crypto_Portfolio_Manager
 │
 ├── app.py
+├── config.py
 ├── requirements.txt
-├── README.md
+├── crypto.db
+│
+├── auth/
+│   ├── auth_service.py
 │
 ├── db/
 │   ├── database.py
@@ -69,15 +73,32 @@ CRYPTOPORT/
 │
 ├── services/
 │   ├── ai_assistant.py
+│   ├── chatbot.py
+│   ├── crypto_api.py
+│   ├── live_prices.py
+│   ├── forecast_engine.py
+│   ├── risk_engine.py
+│   ├── trading_signals.py
+│   ├── alert_engine.py
+│   ├── email_service.py
+│   └── ws_prices.py
 │
 ├── ui/
 │   ├── dashboard.py
+│   ├── components.py
+│   ├── chatbot_ui.py
+│   │
 │   └── pages/
+│       ├── dashboard_page.py
+│       ├── portfolio_page.py
+│       ├── charts_page.py
+│       ├── forecast_page.py
+│       ├── risk_page.py
+│       ├── signals_page.py
+│       └── chatbot_page.py
 │
-├── assets/
-│
-└── data/
-```
+└── utils/
+    └── security.py```
 
 ---
 
